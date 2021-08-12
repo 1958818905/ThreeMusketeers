@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<!--
+<form action="" method=""></form>
+action:向哪儿发送表单数据 可以是网站，也可以是请求处理地址
+method：规定如何发送表单
+  get:可以看到提交写信息，高效，不完全
+  post：不能看见提交信息，较慢，安全，传输大文件
+
+input:输入框
+  1.type:类型
+  2.name：元素名称
+  3.value：初始值
+  4.checked：单多选框是否被选择
+
+  hidden隐藏域
+    placeholder：提示信息
+    required：不能为空
+    pattern：正则表达式
+
+-->
+<h1>注册</h1>
+<form action="Demo02.html" method="get">
+    <p>名字：<input type="text" name="username"  placeholder="请输入用户名" required></p>
+    <p>密码：<input type="password" name="password" value="123456"></p>
+    <p>
+        性别：
+        <input type="radio" value="boy" name="sex" checked disabled>男
+        <input type="radio" value="girl" name="sex">女
+    </p>
+
+    <p>
+        爱好：
+        <input type="checkbox" value="sleep" name="hobby">睡觉
+        <input type="checkbox" value="code" name="hobby" checked>敲代码
+        <input type="checkbox" value="chat" name="hobby">聊天
+        <input type="checkbox" value="game" name="hobby">游戏
+    </p>
+
+    <p>
+        按钮：
+        <input type="button" name="bnt1" value="点击">
+        <input type="image" alt="无" src="resource/1.png">
+    </p>
+
+    <p>
+        下拉框：
+        <select name="name">
+            <option value="china">china</option>
+            <option value="Usa" selected>usa</option>
+        </select>
+    </p>
+
+    <p>
+        反馈：
+        <textarea name="textarea" cols="50" rows="10"></textarea>
+    </p>
+
+
+    <p>
+        文件域：
+        <input type="file" name="file">
+        <input type="button" value="上传">
+    </p>
+
+
+    <p>
+        邮件验证：
+        <input type="email" name="email">
+    </p>
+
+    <p>
+        URL验证：
+        <input type="url" name="url">
+    </p>
+
+    <p>
+        数字验证：
+        <input type="number" name="number" max="100" min="0" step="10">
+    </p>
+
+    <p>
+        搜索框滑块：
+        <input name="range " type="range" max="100" min="0">
+    </p>
+    <p>
+        搜索框：
+        <input type="search" name="search">
+    </p>
+
+  <p>
+    <input type="text" name="diyemail" pattern="^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$">
+  </p>
+
+    <p>
+        <label for="mark">点击</label>
+        <input type="text" id="mark">
+    </p>
+
+    <p><input type="submit">
+        <input type="reset" value="清空表单">
+    </p>
+
+</form>
+</body>
+</html>
