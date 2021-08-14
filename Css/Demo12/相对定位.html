@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 18px;
+            line-height: 23px;
+
+        }
+        #father{
+           border: 1px solid skyblue;
+            padding: 0;
+        }
+        .first{
+            border: 1px solid yellowgreen;
+            position: relative;
+            top: 20px;
+            left: 20px;
+
+        }
+        .second{
+            border: 1px solid pink;
+        }
+        .third{
+            border: 1px solid sandybrown;
+            position: relative;
+            bottom: 10px;
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="father">
+    <div class="first">第一个盒子</div>
+    <div class="second">第二个盒子</div>
+    <div class="third">第三个盒子</div>
+</div>
+</body>
+</html>

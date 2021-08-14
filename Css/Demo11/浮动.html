@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+        }
+        #father{
+            border: 1px #000 solid;
+        }
+        #father:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .layer-01{
+            border: 1px #F00 dashed;
+            display: inline-block;
+            float: left;
+        }
+        .layer-02{
+            border: 1px #00F dashed;
+            display: inline-block;
+            float: right;
+        }
+        .layer-03{
+            border: 1px #F606 dashed;
+            display: inline-block;
+            float: right;
+        }
+        .layer-04{
+            border: 1px #666 dashed;
+            font-size: 12px;
+            line-height: 23px;
+            display: inline-block;
+            float: left;
+            clear: both;
+        }
+        .clear{
+            clear: both;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="father">
+    <div class="layer-01"><img src="image/a.jpg" alt=""></div>
+    <div class="layer-02"><img src="image/a.jpg" alt=""></div>
+    <div class="layer-03"><img src="image/a.jpg" alt=""></div>
+    <div class="layer-04">
+        浮动盒子
+    </div>
+    <div class="clear">
+
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

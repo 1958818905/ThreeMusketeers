@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+    <style>
+
+    *{
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        font-size: 12px;
+        line-height: 25px;
+    }
+    ul li{
+        list-style: none;
+    }
+    .box{
+        width: 350px;
+        height: 350px;
+        border: 1px solid skyblue;
+    }
+    .box ul{
+        position: relative;
+    }
+    .Name,.Name2{
+        position: absolute;
+        width: 350px;
+        height: 25px;
+        border: 1px solid yellowgreen;
+        top: 179px;
+
+
+    }
+    .Name{
+        z-index: 999;
+        color: white;
+    }
+    .Name2{
+        background: skyblue;
+        opacity: 0.5;
+    }
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li><img src="image/a.jpg" alt=""></li>
+        <li class="Name">皮卡丘</li>
+        <li class="Name2"></li>
+        <li class="Name3">皮卡丘3</li>
+        <li class="Name4">皮卡丘4</li>
+    </ul>
+</div>
+</body>
+</html>
