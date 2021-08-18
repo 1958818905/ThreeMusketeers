@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script>
+    $(function (){
+       $('#divMove').onmousemove(function (e){
+           $('#mouseMove').text("x:"+e.pageX+" y:"+e.pageY)
+       })
+    });
+    </script>
+    <style>
+        #divMove{
+            width: 400px;
+            height: 300px;
+            border: 1px solid skyblue;
+        }
+    </style>
+</head>
+<body>
+mouse : <span id="mouseMove"></span>
+<div id="divMove">
+
+</div>
+</body>
+</html>
